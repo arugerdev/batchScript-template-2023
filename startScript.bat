@@ -29,7 +29,14 @@ goto Close
 
 :InstallApps
 cls
+
+if exits C:\Program Files\WinRAR\WinRAR.exe (
+  echo "Winrar is already installed"
+)
+else (
 "%~d0\winrar-x64.exe" /S
+)
+
 ////
 INSERTA TODOS LOS PROGRAMAS A INSTALAR, /? PARA SABER LOS PARAMETROS DE CADA INSTALADOR
 ////
