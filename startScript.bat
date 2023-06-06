@@ -30,7 +30,7 @@ goto Close
 :InstallApps
 cls
 
-if exits C:\Program Files\WinRAR\WinRAR.exe (
+if exist "C:\Program Files\WinRAR\WinRAR.exe" (
   echo "Winrar is already installed"
 )
 else (
